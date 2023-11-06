@@ -17,7 +17,7 @@ function initializeDatabase() {
   const connection = mysql.createConnection(dbConfig);
 
   // Create the database if not exists
-  connection.query("CREATE DATABASE IF NOT EXISTS employeedb", (err) => {
+  connection.query("CREATE DATABASE IF NOT EXISTS sql12659558", (err) => {
     if (err) {
       console.error("Error creating database:", err);
     } else {
