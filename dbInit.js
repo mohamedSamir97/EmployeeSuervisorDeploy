@@ -23,7 +23,7 @@ function initializeDatabase() {
     } else {
       console.log("Database created or already exists");
       // After the database is created or if it already exists, connect to it
-      dbConfig.database = "employeedb";
+      dbConfig.database = "sql12659558";
       initializeTablesAndAdmin();
     }
   });
