@@ -17,13 +17,13 @@ function initializeDatabase() {
   const connection = mysql.createConnection(dbConfig);
 
   // Create the database if not exists
-  connection.query("CREATE DATABASE IF NOT EXISTS sql12659558", (err) => {
+  connection.query("CREATE DATABASE IF NOT EXISTS badif6qckxd9peue7en8", (err) => {
     if (err) {
       console.error("Error creating database:", err);
     } else {
       console.log("Database created or already exists");
       // After the database is created or if it already exists, connect to it
-      dbConfig.database = "sql12659558";
+      dbConfig.database = "badif6qckxd9peue7en8";
       initializeTablesAndAdmin();
     }
   });
