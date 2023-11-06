@@ -38,8 +38,10 @@ module.exports = {
         [email],
         (error, results) => {
           if (error) {
+            console.log(error);
             reject(error);
           } else {
+            console.log(JSON.stringify(results));
             resolve(results[0]);
           }
         }
