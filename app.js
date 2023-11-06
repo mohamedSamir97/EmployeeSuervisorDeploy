@@ -9,11 +9,11 @@ const employeeRouter = require("./api/employees/employee.router");
 
 app.use(express.json());
 //cors origin configuration
-// app.use(cors({
-//     origin: 'http://localhost:4200',
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//     optionsSuccessStatus: 200,
-//   }));
+app.use(cors({
+    origin: 'https://employeesupervisorfrontdeploy-ns8560rjw-mohamed-samirs-projects.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    optionsSuccessStatus: 200,
+  }));
 
 // Initialize the database
 initializeDatabase();
