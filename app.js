@@ -14,16 +14,17 @@ app.use(express.json());
 initializeDatabase();
 
 
-
+app.use(cors({
+  //origin: 'https://employeesupervisorfrontdeploy.vercel.app',
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  optionsSuccessStatus: 200,
+}));
 
 app.use("/api/users", userRouter);
 app.use("/api/employees", employeeRouter);
 //cors origin configuration
-app.use(cors({
-  origin: 'https://employeesupervisorfrontdeploy.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  optionsSuccessStatus: 200,
-}));
+
 
 const port = process.env.APP_PORT || 4000;
 
